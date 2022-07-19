@@ -1,0 +1,27 @@
+{
+  "name": "CUSTOMIZE BOT",
+  "description": "Kumuthu Prabhasha",
+  "repository": "https://github.com/prabhasha2006/User-Bot-MD",
+  "logo": "https://i.ibb.co/CwffZ61/20220605-104552.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
+        },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
