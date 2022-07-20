@@ -16,18 +16,18 @@ const chalk = require('chalk')
 const FileType = require('file-type')
 const path = require('path')
 const PhoneNumber = require('awesome-phonenumber')
-const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./Media/lib/exif')
-const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./Media/lib/myfunc')
+const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
+const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 
 var low
 try {
   low = require('lowdb')
 } catch (e) {
-  low = require('./Media/lib/lowdb')
+  low = require('./lib/lowdb')
 }
 
 const { Low, JSONFile } = low
-const mongoDB = require('./Media/lib/mongoDB')
+const mongoDB = require('./lib/mongoDB')
 
 global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 
@@ -38,7 +38,7 @@ global.db = new Low(
   /https?:\/\//.test(opts['db'] || '') ?
     new cloudDBAdapter(opts['db']) : /mongodb/.test(opts['db']) ?
       new mongoDB(opts['db']) :
-      new JSONFile(`Media/database/database.json`)
+      new JSONFile(`database/database.json`)
 )
 global.db.data = {
     users: {},
@@ -87,7 +87,7 @@ async function startKUMUTHU() {
         if (!KUMUTHU.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(KUMUTHU, mek, store)
-        require("./Gojosensei")(KUMUTHU, m, chatUpdate, store)
+        require("./Kumuthu")(KUMUTHU, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
@@ -451,7 +451,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
        let type = '', mimetype = mime, pathFile = filename
        if (options.asDocument) type = 'document'
        if (options.asSticker || /webp/.test(mime)) {
-        let { writeExif } = require('./Media/lib/exif')
+        let { writeExif } = require('./lib/exif')
         let media = { mimetype: mime, data }
         pathFile = await writeExif(media, { packname: options.packname ? options.packname : global.packname, author: options.author ? options.author : global.author, categories: options.categories ? options.categories : [] })
         await fs.promises.unlink(filename)
@@ -549,7 +549,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
             mime: 'application/octet-stream',
             ext: '.bin'
         }
-        filename = path.join(__filename, '../Media/src/' + new Date * 1 + '.' + type.ext)
+        filename = path.join(__filename, '../src/' + new Date * 1 + '.' + type.ext)
         if (data && save) fs.promises.writeFile(filename, data)
         return {
             res,
