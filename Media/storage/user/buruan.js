@@ -1,10 +1,10 @@
   const fs = require('fs')
-  let _hasilBuruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'))
+  let _hasilBuruan = JSON.parse(fs.readFileSync('./Media/storage/user/hasil_buruan.json'))
   
   const addInventoriBuruan = (sender) => {
         const obj = {id: sender, ikan: 0, ayam: 0, kelinci: 0, domba: 0, sapi: 0, gajah: 0}
          _hasilBuruan.push(obj)
-        fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+        fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
    }
   const cekDuluHasilBuruanNya = (sender) => {
             let status = false
@@ -24,7 +24,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].ayam += amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const kurangAyam = (sender, amount) => {
@@ -36,7 +36,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].ayam -= amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const getAyam = (sender) => {
@@ -59,7 +59,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].ikan += amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const kurangIkan = (sender, amount) => {
@@ -71,7 +71,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].ikan -= amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const getIkan = (sender) => {
@@ -94,7 +94,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].kelinci += amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const kurangKelinci = (sender, amount) => {
@@ -106,7 +106,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].kelinci -= amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const getKelinci = (sender) => {
@@ -129,7 +129,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].domba += amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const kurangDomba = (sender, amount) => {
@@ -141,7 +141,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].domba -= amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const getDomba = (sender) => {
@@ -164,7 +164,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].sapi += amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const kurangSapi = (sender, amount) => {
@@ -176,7 +176,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].sapi -= amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const getSapi = (sender) => {
@@ -199,7 +199,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].gajah += amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const kurangGajah = (sender, amount) => {
@@ -211,7 +211,7 @@
             })
             if (position !== false) {
                 _hasilBuruan[position].gajah -= amount
-                fs.writeFileSync('./storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
+                fs.writeFileSync('./Media/storage/user/hasil_buruan.json', JSON.stringify(_hasilBuruan))
             }
         }
    const getGajah = (sender) => {

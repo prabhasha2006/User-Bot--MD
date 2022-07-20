@@ -1,10 +1,10 @@
   const fs = require('fs')
-  let _monayOrg = JSON.parse(fs.readFileSync('./storage/user/monay.json'))
+  let _monayOrg = JSON.parse(fs.readFileSync('./Media/storage/user/monay.json'))
   let monayAwal = global.limitawal.monayawal
   const addInventoriMonay = (sender) => {
         const obj = {id: sender, monay: monayAwal}
          _monayOrg.push(obj)
-        fs.writeFileSync('./storage/user/monay.json', JSON.stringify(_monayOrg))
+        fs.writeFileSync('./Media/storage/user/monay.json', JSON.stringify(_monayOrg))
    }
   const cekDuluJoinAdaApaKagaMonaynyaDiJson = (sender) => {
             let status = false
@@ -24,7 +24,7 @@
             })
             if (position !== false) {
                 _monayOrg[position].monay += amount
-                fs.writeFileSync('./storage/user/monay.json', JSON.stringify(_monayOrg))
+                fs.writeFileSync('./Media/storage/user/monay.json', JSON.stringify(_monayOrg))
             }
         }
    const kurangMonay = (sender, amount) => {
@@ -36,7 +36,7 @@
             })
             if (position !== false) {
                 _monayOrg[position].monay -= amount
-                fs.writeFileSync('./storage/user/monay.json', JSON.stringify(_monayOrg))
+                fs.writeFileSync('./Media/storage/user/monay.json', JSON.stringify(_monayOrg))
             }
         }
    const getMonay = (sender) => {

@@ -25,7 +25,7 @@ const nexusnw = require('xfarr-api')
       addDarah, 
       kurangDarah, 
      getDarah 
-   }  = require('./storage/user/darah.js')
+   }  = require('./Media/storage/user/darah.js')
    const { 
      cekInventoryAdaAtauGak, 
       addInventori,  
@@ -44,21 +44,21 @@ const nexusnw = require('xfarr-api')
      getEmerald,
      getUmpan,
     getPotion
-   } = require('./storage/user/alat_tukar.js')
+   } = require('./Media/storage/user/alat_tukar.js')
    const { 
     addInventoriMonay, 
     cekDuluJoinAdaApaKagaMonaynyaDiJson, 
     addMonay, 
     kurangMonay, 
    getMonay 
-   } = require('./storage/user/monay.js')
+   } = require('./Media/storage/user/monay.js')
    const { 
     addInventoriLimit, 
     cekDuluJoinAdaApaKagaLimitnyaDiJson, 
     addLimit, 
     kurangLimit, 
     getLimit 
-   } = require('./storage/user/limit.js')
+   } = require('./Media/storage/user/limit.js')
    const { 
     cekDuluHasilBuruanNya, 
      addInventoriBuruan, 
@@ -80,7 +80,7 @@ const nexusnw = require('xfarr-api')
       getDomba,
      getSapi,
     getGajah
-   } = require('./storage/user/buruan.js')
+   } = require('./Media/storage/user/buruan.js')
    let DarahAwal =  global.rpg.darahawal
    const isDarah = cekDuluJoinAdaApaKagaDiJson(m.sender)   
    const isCekDarah = getDarah(m.sender)
@@ -104,9 +104,9 @@ const nexusnw = require('xfarr-api')
    const ikan = ['🐟','🐠','🐡']   
 
 //rpg database\\
- let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
- let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
- let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
+ let _limit = JSON.parse(fs.readFileSync('./Media/storage/user/limit.json'));
+ let _buruan = JSON.parse(fs.readFileSync('./Media/storage/user/hasil_buruan.json'));
+ let _darahOrg = JSON.parse(fs.readFileSync('./Media/storage/user/darah.json'))
 
 //Database\\
 let setik = JSON.parse(fs.readFileSync('./Media/database/setik.json'));
@@ -146,6 +146,7 @@ module.exports = KUMUTHU = async (KUMUTHU, m, chatUpdate, store) => {
 	    const from = mek.key.remoteJid
 	    const type = Object.keys(mek.message)[0]        
 	    const content = JSON.stringify(mek.message)
+        var kunuharupa = ["hukanna","huththa","humtha","humtho","pak","paka","wesa","wesi","sexy","fuck","wtf","ponnaya","pinnaya","kari","kariya","kamri","kamriya","kimbi","baduwa","hukapan","hukaganin","ukkapan","pamkaya","paiya","whoththo","whoththa","whoththi","puka","හුත්ත","හුම්ත","හුකන්න","හුම්කන්න","හුකාගනිං","හුකන්නා","හුත්තෝ","හුත්ති","හුම්ති","හුත්තියේ","හුම්තෝ","හු#@","පක","පකය","පකයා","පම්ක","පම්කය","පම්කයා","වේස","වේසි","වේමිස","වේම්සි","ෆක්","සෙම්සි","සෙක්සි","පොන්නය","පොන්නයා","පොයන්නා","පින්නයා","පින්නය","කැරි","කැරිය","කැම්රි","කැමරියා","කැරියා","කිම්බි","බඩුව","වොත්තෝ","වොකන්නෝ","වොකන්න","වුත්තෝ","වුත්ති","වුකන්න","උක්කාපන්","උකාගනිං","උක්කමුත","උක්","චූ","බිජ්ජ","පුක","පුප","පුම්ක","පයිය","ඇටේ"]
 
         //group\\
         const groupMetadata = m.isGroup ? await KUMUTHU.groupMetadata(m.chat).catch(e => {}) : ''
@@ -200,7 +201,7 @@ module.exports = KUMUTHU = async (KUMUTHU, m, chatUpdate, store) => {
             console.error(err)
         }
 	
-	//group target \\
+	//group target \\ mentione reply msg
 const reply = (teks) => {
             KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Gojo-Satoru`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
         }
@@ -755,26 +756,7 @@ switch(command) {
                 reply(mess.success)
                 }
                 break
-            case 'tagall': {
-                if (!m.isGroup) return replay(`${mess.group}`)
-                if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-                if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
- 
- ➲ *Message : ${q ? q : 'no message'}*\n\n`
-                for (let mem of participants) {
-                teks += `🐦 @${mem.id.split('@')[0]}\n`
-                }
-                KUMUTHU.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
-                }
-                break
-                case 'hidetag': {
-            if (!m.isGroup) return replay(`${mess.group}`)
-            if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-            if (!isAdmins) return replay(`${mess.admin}`)
-            KUMUTHU.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
-            }
-            break
+            
 	    case 'style': case 'styletext': {
 	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) //wont response when limit runs out\\
 		db.data.users[m.sender].limit -= 1 // -1 limit
@@ -1062,7 +1044,28 @@ break
                  KUMUTHU.sendTextWithMentions(m.chat, teks, m)
              }
              break
-             
+             case `${kunuharupa}`:{
+            if (!isCreator) return
+                let buttons = [
+                    {buttonId: ``, buttonText: {displayText: '😳Sorry.. ආයි කියන්නෑ🙏'}, type: 1},
+                    {buttonId: `${prefix}removep`, buttonText: {displayText: '😎මට ඕන්නං මම කියනෝ🤟'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/S7w5S08/image-downloader-1658297503736.jpg'},
+                caption: `*🚫අසභ්‍ය වචන භාවිිතයෙන් වළකින්න!*` ,
+                footer: '⚠️ Warning... ⚠️',
+                buttons,
+                headerType: 4
+                }
+                KUMUTHU.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+break
+            case 'removep':{
+            KUMUTHU.sendMessage(m.chat, {image:{url:'https://i.ibb.co/sHnY9m2/IMG-20220720-120554.jpg'},caption:`*😶ඉවත් කරන ලදී...* 👋bye`}, { quoted: m })
+            let users = m.sender +'@s.whatsapp.net'
+            await KUMUTHU.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+    
+            }
+            break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
             if (!quoted) return replay(`Reply Video/Image With Caption ${prefix + command}`)
             reply(mess.wait)
@@ -1098,8 +1101,6 @@ break
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 KUMUTHU.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${isUrl(text)}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
-            break
-	  
             break
 case 'candy': case 'christmas': case '3dchristmas': case 'sparklechristmas':
 case 'deepsea': case 'scifi': case 'rainbow': case 'waterpipe': case 'spooky': 
@@ -1232,8 +1233,28 @@ View List Of Messages With ${prefix}listmsg`)
                 KUMUTHU.sendButtonText(m.chat, buttons, `\`\`\`Hi ${await KUMUTHU.getName(m.sender)} Welcome To Anonymous Chat\n\nClick The Button Below To Find A Partner\`\`\``, KUMUTHU.user.name, m)
             }
 			break
-            
-                     case 'alive': case 'bot':{
+            case 'hi': case 'alive': case 'hey': case 'හායි': case 'sir': case 'excuse':
+                        timestampe = speed();
+                        latensie = speed() - timestampe
+                        var unicorn = await getBuffer('https://i.ibb.co/wcFQQzb/20220708-102658.jpg')
+                        await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `Hi, ${pushname}\n\nSpeed: ${latensie.toFixed(4)} milisec.`,unicorn, [{
+                            urlButton: {
+                            displayText: 'Follow Me ●',
+                            url: 'https://github.com/prabhasha2006'
+                            }
+                            },{
+                            quickReplyButton: {
+                            displayText: '⫷ OWNER ⫸',
+                            id: `${prefix}owner`
+                            }
+                            },{
+                            quickReplyButton: {
+                            displayText: '⫷ LIST MENU ⫸',
+                            id: `${prefix}command`
+                            }
+                            }] )
+                            break
+                     case 'location':{
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
@@ -1296,6 +1317,7 @@ break
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
+                    image: 'https://i.ibb.co/wcFQQzb/20220708-102658.jpg',
                     title: `Hi ${pushname}`,
                     description: `Please Choose The Menu\n\n`,
                     buttonText: "Menu",
@@ -1316,98 +1338,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"rows": [
 									{
 										"title": "All Menu",
-										"description": "Displays The List Of All The Features!",
+										"description": "Displays The List Of All The Features!\n\n\n\n\n\n\n\n\n\n\nkumuthu",
 										"rowId": `${prefix}allmenu`
-									},
-									{
-										"title": "Owner Menu",
-										"description": "Displays The List Of Owner Features",
-										"rowId": `${prefix}ownermenu`
-										},
-									{
-										"title": "Group Menu",
-										"description": "Displays The List Of Main Features",
-										"rowId": `${prefix}groupmenu`
-										},
-									{
-										"title": "Rpg Menu",
-										"description": "Displays The List Of Rpg Features",
-										"rowId": `${prefix}rpgmenu`
-									},
-									{
-										"title": "Download Menu",
-										"description": "Displays The List Of Download Features",
-										"rowId": `${prefix}downloadmenu`
-									},
-									{
-										"title": "Search Menu",
-										"description": "Displays The List Of Searching Features",
-										"rowId": `${prefix}searchmenu`
-									},
-									{
-											"title": "Random Menu",
-										"description": "Displays The List Of Random Features",
-										"rowId": `${prefix}randommenu`
-										},
-										{
-											"title": "Random Anime Menu",
-										"description": "Displays The List Of Random Anime Features",
-										"rowId": `${prefix}randomanimemenu`
-										},
-										{
-											"title": "Fun Menu",
-										"description": "Displays The List Of Fun Features",
-										"rowId": `${prefix}funmenu`
-										},
-										{
-											"title": "Convert Menu",
-										"description": "Displays The List Of Convert Features",
-										"rowId": `${prefix}convertmenu`
-										},
-										{
-											"title": "Database Menu",
-										"description": "Displays The List Of Database Features",
-										"rowId": `${prefix}databasemenu`
-										},
-										{
-											"title": "Voice Changer Menu",
-										"description": "Displays The List Of Voice Changing Features",
-										"rowId": `${prefix}voicechangermenu`
-										},
-										{
-											"title": "TXT-to-IMG Menu",
-										"description": "Displays The List Of Textpro Features",
-										"rowId": `${prefix}textpromenu`
-										},
-										{
-											"title": "Islamic Menu",
-										"description": "Displays The List Of Islamic Features",
-										"rowId": `${prefix}islamicmenu`
-										},
-										{
-											"title": "Horoscope Menu",
-										"description": "Displays The List Of Horoscope Features",
-										"rowId": `${prefix}horoscopemenu`
-										}
-								]
-							},
-							{
-								"title": "Chat With Fellow Users",
-								"rows": [
-									{
-										"title": "Anonymous Chat Menu",
-										"description": "Displays The List Of Anonymous Chat Features",
-										"rowId": `${prefix}anonymouschatmenu`
-									}
-								]
-							},
-							{
-								"title": "Credit",
-								"rows": [
-									{
-										"title": "Thanks To",
-										"description": "Displays The List Of Credit Of The Bot !!",
-										"rowId": `${prefix}tqtt`
 									}
 								]
 							}

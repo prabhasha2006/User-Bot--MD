@@ -19,6 +19,8 @@ global.APIKeys = {
 }
 
 //customize settings\\
+global.alivepic = 'https://i.ibb.co/wcFQQzb/20220708-102658.jpg'
+
 global.owner = ['Your Number']
 global.premium = ['Your Number']
 global.ownernomer = 'Your Number'

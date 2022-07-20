@@ -1,10 +1,10 @@
   const fs = require('fs')
-  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
+  let _darahOrg = JSON.parse(fs.readFileSync('./Media/storage/user/darah.json'))
 
   const addInventoriDarah = (sender, darah) => {
         const obj = {id: sender, healt: darah}
          _darahOrg.push(obj)
-        fs.writeFileSync('./storage/user/darah.json', JSON.stringify(_darahOrg))
+        fs.writeFileSync('./Media/storage/user/darah.json', JSON.stringify(_darahOrg))
    }
   const cekDuluJoinAdaApaKagaDiJson = (sender) => {
             let status = false
@@ -24,7 +24,7 @@
             })
             if (position !== false) {
                 _darahOrg[position].healt += amount
-                fs.writeFileSync('./storage/user/darah.json', JSON.stringify(_darahOrg))
+                fs.writeFileSync('./Media/storage/user/darah.json', JSON.stringify(_darahOrg))
             }
         }
    const kurangDarah = (sender, amount) => {
@@ -36,7 +36,7 @@
             })
             if (position !== false) {
                 _darahOrg[position].healt -= amount
-                fs.writeFileSync('./storage/user/darah.json', JSON.stringify(_darahOrg))
+                fs.writeFileSync('./Media/storage/user/darah.json', JSON.stringify(_darahOrg))
             }
         }
    const getDarah = (sender) => {
