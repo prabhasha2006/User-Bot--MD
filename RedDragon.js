@@ -7956,13 +7956,20 @@ KUMUTHU.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
 case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': case 'bot':
+    
+    const rdtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 KUMUTHU.sendMessage(from, { react: { text: `👋`, key: m.key }})
     timestampe = speed();
     latensie = speed() - timestampe
     var unicorn = await getBuffer('https://i.ibb.co/2dDb0Fp/couple-child.jpg')
-    await KUMUTHU.send5ButImg(from, `` + '' + ' ', `●●➾ Hi, ${pushname}\n●●➾ I am Alive👋\n●●➾ ${botname}\n▌✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀\n${global.alivemsg}\n\n●●➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐`,unicorn, [{
+    await KUMUTHU.send5ButImg(from, `` + '' + '', `            ▁▂▃▄▅▆▇█▇▆▅▄▃▂▁
+╔💠𝗛𝗜 ${pushname}
+${global.alivemsg}
+
+╔💠𝚂𝙿𝙴𝙴𝙳 = [${latensie.toFixed(4)} mili sec]
+╚💠𝚃𝙸𝙼𝙴  = [${rdtime}]`,unicorn, [{
         urlButton: {
         displayText: 'Red Dragon Website ●',
         url: 'https://sites.google.com/view/red-dragon-bot/home'
