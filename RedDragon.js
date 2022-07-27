@@ -882,7 +882,7 @@ if (budy.includes("gn" && "night" && "නයිට්" && "රාත්‍රි
    KUMUTHU.sendMessage(m.chat, { sticker: result })
 if (budy.includes("kumuthu" && "prabhasha"))
 result = fs.readFileSync(`./Android/AllData/sticker/kumu.webp`)
-KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m });
+KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
     //////////////
         //Public & Self\\
         if (!KUMUTHU.public) {
