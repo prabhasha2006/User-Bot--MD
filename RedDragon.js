@@ -3042,7 +3042,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
                 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
-                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./Android/AllData/theme/cheemspic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./Android/AllData/theme/repl.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
                 for (let i of anu) {
                     await sleep(1500)
@@ -5781,7 +5781,7 @@ break
 	if (isBanChat) return reply(mess.banChat)
 	reply(mess.wait)
             let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
-            if (!args[0]) reply(`Use ${prefix}gitclone repo link\nExample: https://github.com/DGXeon/CheemsBot-MD4`)
+            if (!args[0]) reply(`Use ${prefix}gitclone repo link\nExample: https://github.com/prabhasha2006`)
     if (!regex1.test(args[0])) return reply(mess.linkm)
     let [, user, repo] = args[0].match(regex1) || []
     repo = repo.replace(/.git$/, '')
@@ -7827,7 +7827,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'web': case'script': case 'qr': case 'scan': {
                 
-                result = fs.readFileSync(`./DragonMedia/image/qr.jpg`)
+                result = fs.readFileSync(`./Android/AllData/image/qr.jpg`)
 				KUMUTHU.sendMessage(m.chat, { image: result },{caption: '*📷 Scan Me 🙃✅*\n\nPowerd by: ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*'}, { quoted: m })
             }
 
@@ -7946,7 +7946,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("Android/AllData/theme/cheemspic.jpg"),
+thumbnail: fs.readFileSync("Android/AllData/theme/repl.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
 sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
@@ -7961,7 +7961,7 @@ if (isBanChat) return reply(mess.banChat)
 KUMUTHU.sendMessage(from, { react: { text: `👋`, key: m.key }})
     timestampe = speed();
     latensie = speed() - timestampe
-    var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
+    var unicorn = await getBuffer('https://i.ibb.co/2dDb0Fp/couple-child.jpg')
     await KUMUTHU.send5ButImg(from, `` + '' + ' ', `●●➾ Hi, ${pushname}\n●●➾ I am Alive👋\n●●➾ ${botname}\n▌✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀\n${global.alivemsg}\n\n●●➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐`,unicorn, [{
         urlButton: {
         displayText: 'Red Dragon Website ●',

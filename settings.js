@@ -35,16 +35,16 @@ global.doc6 = 'application/vnd.android.package-archive'
 //owmner v card
 global.vcardowner = ['+380944814219'] //ur owner number
 global.ownername = "😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯" //ur owner name
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
+global.ytname = "" //ur yt chanel name
+global.socialm = "GitHub: prabhasha2006" //ur github or insta name
 global.location = "India, Mizoram, Aizawl" //ur location
 
 //bot bomdy 
 global.owner = ['+380944814219']
 global.ownertag = '+380944814219' //ur tag number
 global.botname = 'Cheems Bot MD V4' //ur bot name
-global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n\n\n\n\n🦄🦄🦄 " //ur sticker watermark packname
-global.author = "🦄Dream Guy Xeon" //ur sticker watermark author
+global.packname = "Bot Sticker" // sticker packname
+global.author = "☬RED༒DRAGON࿐" // sticker author
 global.dragonemoji = '🧩' // Menu emoji
 global.footer = '©_Kumuthu.' //In list menu
 
@@ -73,7 +73,7 @@ global.autorep = []
 global.ntilink = []
 
 //omther
-global.sessionName = 'session'
+global.sessionName = 'session (1)'
 global.antitags = false
 global.prefa = ['','!','.','😂','❤️','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sp = '⭔'
@@ -105,7 +105,12 @@ global.mess = {
    umpanawal: 5,
    potionawal: 1
 }
-global.thumb = fs.readFileSync('./Android/AllData/theme/cheemspic.jpg')
+global.thum = fs.readFileSync("./Android/AllData/theme/repl.jpg") //ur thumb pic
+global.log0 = fs.readFileSync("./Android/AllData/theme/repl.jpg") //ur logo pic
+global.err4r = fs.readFileSync("./Android/AllData/theme/repl.jpg") //ur error pic
+global.thumb = fs.readFileSync("./Android/AllData/theme/repl.jpg") //ur thumb pic
+
+global.thumb = fs.readFileSync('./Android/AllData/theme/repl.jpg')
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
