@@ -449,11 +449,11 @@ message: {
 	
 	//group target \\
     const reply = (teks) => {
-        KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://github.com/prabhasha2006"}}}, { quoted: m})
+        KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Android/database/dragon.jpg`),"sourceUrl": "https://github.com/prabhasha2006"}}}, { quoted: m})
     }
     
     const replay = (teks) => {
-        KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://github.com/prabhasha2006"}}}, { quoted: m})
+        KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Android/database/dragon.jpg`),"sourceUrl": "https://github.com/prabhasha2006"}}}, { quoted: m})
     }
 	
         //Public & Self\\
