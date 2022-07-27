@@ -456,7 +456,6 @@ message: {
         KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Android/database/dragon.jpg`),"sourceUrl": "https://github.com/prabhasha2006"}}}, { quoted: m})
     }
 	//////////////
-    require ('./replyMSG')
 if (budy.includes("hi "))
    KUMUTHU.sendMessage(m.chat, { text: `${rep.K1}` }, { quoted: m })
    result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
