@@ -615,7 +615,7 @@ message: {
         result = fs.readFileSync(`./Android/AllData/sticker/sari.webp`)
         KUMUTHU.sendMessage(m.chat, { sticker: result })
            }
-     if (budy.includes("නෑ" && "නැ" && "na")) {
+     if (budy.includes("නෑ" && "නැ" && "naa")) {
      result = fs.readFileSync(`./Android/AllData/sticker/hihi.webp`)
      KUMUTHU.sendMessage(m.chat, { sticker: result })
         KUMUTHU.sendMessage(m.chat, { text: `${rep.K39}` }, { quoted: m })
