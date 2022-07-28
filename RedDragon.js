@@ -451,438 +451,585 @@ message: {
     const reply = (teks) => {
         KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Android/database/dragon.jpg`),"sourceUrl": "https://github.com/prabhasha2006"}}}, { quoted: m})
     }
-    
     const replay = (teks) => {
         KUMUTHU.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Android/database/dragon.jpg`),"sourceUrl": "https://github.com/prabhasha2006"}}}, { quoted: m})
     }
 	//////////////
-if (budy.includes("hi "))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K1}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-   result = fs.readFileSync(`./Android/AllData/sticker/dance.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("හායි "))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K2}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("hui "))
-   result = fs.readFileSync(`./Android/AllData/sticker/flower.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K3}` }, { quoted: m })
-if (budy.includes("හූයි "))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K4}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/flower.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("හේයි "))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K5}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/hiii.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("hey "))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K6}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/hiii.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("හලෝ" && "halo" && "හලො" && "හලු"))
-   result = fs.readFileSync(`./Android/AllData/sticker/hehe1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K7}` }, { quoted: m })
-if (budy.includes("hello"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K8}` }, { quoted: m })
-if (budy.includes("ane " && "amne"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K9}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/angry1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("අනේ" && "අනෙ" && "අම්නේ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K10}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/angry.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("පනෙ " && "පනේ" && "පණේ" && "පන " && "පණ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K11}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/heart.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("හේහේ" && "හේ "))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K12}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/flower2.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("he he"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K13}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/flower2.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("හී"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K14}` }, { quoted: m })
-if (budy.includes("ammo" && "amo"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K15}` }, { quoted: m })
-if (budy.includes("අමො" && "අමෝ" && "අම්මෝ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K16}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/lokukama.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("බුදු" && "බුදා"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K17}` }, { quoted: m })
-if (budy.includes("චූටි" && "chooti"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K18}` }, { quoted: m })
-if (budy.includes("sudu" && "සුදූ" && "තුදූ" && "ශුඩු"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K19}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/lisa.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("kohomei" && "komei"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K20}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/heart2.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("කොහොමෙයි " && "කෝමද" && "කොහොමද"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K21}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/heart1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("hodai" && "hondai" && "හොදයි" && "හොඳා"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K22}` }, { quoted: m })
-if (budy.includes("maru" && "hebei" && "මරු"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K23}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/hihi.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("මලු"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K24}` }, { quoted: m })
-if (budy.includes("umma"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K25}` }, { quoted: m })
-if (budy.includes("උම්ම" && "උම්මා"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K26}` }, { quoted: m })
-if (budy.includes("ආදරෙ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K27}` }, { quoted: m })
-if (budy.includes("කැමතී"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K28}` }, { quoted: m })
-if (budy.includes("uwa"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K29}` }, { quoted: m })
-if (budy.includes("ඌයි"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K30}` }, { quoted: m })
-if (budy.includes("aaw" && "Aaw"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K31}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/gun.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("ආව්"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K32}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("හොරගෙ" && "හොර ගෙ" && "හොල"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K33}` }, { quoted: m })
-if (budy.includes("hm" && "හ්ම්"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K34}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/dance1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("හුම්"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K35}` }, { quoted: m })
-if (budy.includes("මොකෝ" && "මොකද" && "moko"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K36}` }, { quoted: m })
-if (budy.includes("හප්" && "දුප්" && "dup"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K37}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("ඕ" && "ඔව්" && "ow" && "oo"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K38}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/sari.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("නෑ" && "නැ" && "na"))
-result = fs.readFileSync(`./Android/AllData/sticker/hihi.webp`)
-KUMUTHU.sendMessage(m.chat, { sticker: result })
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K39}` }, { quoted: m })
-if (budy.includes("ආසයි"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K40}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/bow.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("asa" && "ආස " && "ආසනෑ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K41}` }, { quoted: m })
-if (budy.includes("හා" && "Ha"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K42}` }, { quoted: m })
-if (budy.includes("Ba" && "බැ" && "බෑ"))
-result = fs.readFileSync(`./Android/AllData/sticker/hihi.webp`)
-KUMUTHU.sendMessage(m.chat, { sticker: result })
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K43}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/blackhehe1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("සාම්ත" && "සාන්ත"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K44}` }, { quoted: m })
-if (budy.includes("සුදුද" && "sududa"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K45}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/uu.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("කෑවද" && "කෑවයි" && "කාලද"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K46}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/eat.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("බිව්වද"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K47}` }, { quoted: m })
-if (budy.includes("නිදිම"))//තයි
-result = fs.readFileSync(`./Android/AllData/sticker/hmm1.webp`)
-    KUMUTHU.sendMessage(m.chat, { sticker: result })
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K48}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/gn2.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("නිදාග"))//න්න
-result = fs.readFileSync(`./Android/AllData/sticker/hmm.webp`)
-KUMUTHU.sendMessage(m.chat, { sticker: result })
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K49}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/hmm.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("මොනව" && "මොක" && "මොකෝ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K50}` }, { quoted: m })
-if (budy.includes("mona" && "mok"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K51}` }, { quoted: m })
-if (budy.includes("කරන්නෙ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K52}` }, { quoted: m })
-if (budy.includes("mk"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K53}` }, { quoted: m })
-if (budy.includes("cudda"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K54}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/gamma.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("සුද්දා"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K55}` }, { quoted: m })
-if (budy.includes("රිදෙනෝ" && "සිදෙනෝ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K56}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/angry.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("රිදුන" && "රිදුනා" && "ත කැඩු"))//හිත කැඩුනා
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K57}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("දුක" && "දුම්ක" && "duka"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K58}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-   result = fs.readFileSync(`./Android/AllData/sticker/uu.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("ඉන්න" && "ඉම්න"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K59}` }, { quoted: m })
-if (budy.includes("ඉම්හි" && "imhi"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K60}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/imhi.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("අයියෝ" && "aiyo"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K61}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/haiyo.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("දන්නව"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K62}` }, { quoted: m })
-if (budy.includes("යනවද" && "යනවයි"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K63}` }, { quoted: m })
-if (budy.includes("දෙන්න" && "denna"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K64}` }, { quoted: m })
-if (budy.includes("dipan" && "දීපන්" && "දීපං"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K65}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/gun.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("කන්නැද්ද"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K66}` }, { quoted: m })
-if (budy.includes("පලය" && "කාපන්"))//පලයන්
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K67}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/whokana.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("යකෝ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K68}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/angry1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("ඇයි" && "ai"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K69}` }, { quoted: m })
-if (budy.includes("දන්නෑ" && "danna"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K70}` }, { quoted: m })
-if (budy.includes("හොඳටම ක" && "hodatama ka"))//හොඳටම කරනවා
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K71}` }, { quoted: m })
-if (budy.includes("ගහන්න" && "ගහපන්" && "ගහපි" && "gahapa"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K72}` }, { quoted: m })
-if (budy.includes("හෑ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K73}` }, { quoted: m })
-if (budy.includes("පුදුම"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K74}` }, { quoted: m })
-if (budy.includes("මාර"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K75}` }, { quoted: m })
-if (budy.includes("පට්ට" && "patta"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K76}` }, { quoted: m })
-if (budy.includes("අඩො" && "අඩෝ" && "ado"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K77}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/gun.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("අඩේ" && "ade"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K78}` }, { quoted: m })
-if (budy.includes("ලොකු"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K79}` }, { quoted: m })
-if (budy.includes("පොඩි"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K80}` }, { quoted: m })
-if (budy.includes("ටිකක්" && "tikak"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K81}` }, { quoted: m })
-if (budy.includes("ඒකි" && "eki"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K82}` }, { quoted: m })
-if (budy.includes("ඌ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K83}` }, { quoted: m })
-if (budy.includes("හොටු" && "හාල්"))//කෑලි
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K84}` }, { quoted: m })
-if (budy.includes("පව්" && "පවු" && "paw"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K85}` }, { quoted: m })
-if (budy.includes("ඉන්න" && "ඉදපන්" && "ඉඳපන්" && "idapan" && "idahn" && "idahan"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K86}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/mama.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("කෝ" && "ko" && "කොහෙද"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K87}` }, { quoted: m })
-if (budy.includes("ඇස්"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K88}` }, { quoted: m })
-if (budy.includes("ඔලුව රි" && "oluwa ri"))//රිදෙනෝ
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K89}` }, { quoted: m })
-if (budy.includes("අමාරු" && "amaru"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K90}` }, { quoted: m })
-if (budy.includes("සෙරෙප්පු"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K91}` }, { quoted: m })
-if (budy.includes("කලිසම"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K92}` }, { quoted: m })
-if (budy.includes("අත"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K93}` }, { quoted: m })
-if (budy.includes("වල්" && "wal"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K94}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("අහින්සක" && "ahinsaka"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K95}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/flower1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("අතේ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K96}` }, { quoted: m })
-if (budy.includes("දාන්න" && "දාපන්" && "dapn" && "dapan"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K97}` }, { quoted: m })
-if (budy.includes("පෝන්" && "phone"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K98}` }, { quoted: m })
-if (budy.includes("porn"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K99}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/bite.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("බල්ලා" && "ball" && "bll" && "balm" && "බම්ල" && "බැම්ලි" && "bam" && "බැල්ලි"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K100}` }, { quoted: m })
-if (budy.includes("පූසා"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K101}` }, { quoted: m })
-if (budy.includes("කපුටා"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K102}` }, { quoted: m })
-if (budy.includes("උරුලෑ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K103}` }, { quoted: m })
-if (budy.includes("කියන්" && "කියප" && "කියහ" && "kiya"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K104}` }, { quoted: m })
-if (budy.includes("යමු" && "යං" && "yamu" && "yan"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K105}` }, { quoted: m })
-if (budy.includes("ගියා" && "giya"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K106}` }, { quoted: m })
-if (budy.includes("ආතල්" && "athal"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K107}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("විහිලු" && "ihilu"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K108}` }, { quoted: m })
-if (budy.includes("තරහ" && "tharaha"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K109}` }, { quoted: m })
-if (budy.includes("පම්ක" && "පක" && "pamka"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K110}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/whokana.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("පක්" && "pak"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K111}` }, { quoted: m })
-if (budy.includes("හුප්" && "හුම්ත" && "හුත්" && "කැවු" && "huk" && "huth" && "humth"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K112}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/whokana.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("කැරි" && "කැම්රි" && "kari" && "kamri"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K113}` }, { quoted: m })
-if (budy.includes("පොන්න" && "පොයන්" && "පින්නය" && "ponn" && "pinna"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K114}` }, { quoted: m })
-if (budy.includes("ගොබ්බ" && "ගොං" && "මෝඩ" && "gobba" && "moda"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K115}` }, { quoted: m })
-if (budy.includes("ගෑනි" && "gani"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K116}` }, { quoted: m })
-if (budy.includes("කුක්කු" && "කුම්කු" && "kukku" && "කුම්කු"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K117}` }, { quoted: m })
-if (budy.includes("යටිබඩ"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K118}` }, { quoted: m })
-if (budy.includes("වේස" && "වේසි" && "ඒස" && "ඒසි" && "wesa" && "wesi" && "වේමිස"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K119}` }, { quoted: m })
-if (budy.includes("බඩුව" && "බම්ඩුව" && "baduwa" && "bamduwa"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K120}` }, { quoted: m })
-if (budy.includes("සෙම්සි" && "sex" && "සෙක්සි"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K121}` }, { quoted: m })
-if (budy.includes("හුක" && "හුම්ක" && "humka"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K122}` }, { quoted: m })
-if (budy.includes("උක්" && "uk " && "ukka"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K123}` }, { quoted: m })
-if (budy.includes("පුකේ" && "පුක" && "පුම්ක" && "puka" && "puca"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K124}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/uu.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("ඇටේ" && "ate"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K125}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("වල්ල"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K126}` }, { quoted: m })
-if (budy.includes("කටට දෙ" && "katata d" && "කටට ග"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K127}` }, { quoted: m })
-if (budy.includes("අරින්"))//න
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K128}` }, { quoted: m })
-if (budy.includes("ඕන්"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K129}` }, { quoted: m })
-if (budy.includes("නිකං" && "නිකන්" && "නිකම්" && "නිකාං" && "niakn" && "nikam" && "nikn"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K130}` }, { quoted: m })
-if (budy.includes("😂" && "🤣"))
-result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
-KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K131}` })
-if (budy.includes("😉" && "😅" && "😹"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K132}` })
-   result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
-if (budy.includes("😇"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K133}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("😒" && "😏" && "😼"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K134}` }, { quoted: m })
-if (budy.includes("😭"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K135}` }, { quoted: m })
-if (budy.includes("🥴"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K136}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/hehe.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
-if (budy.includes("🙂"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K137}` }, { quoted: m })
-if (budy.includes("😌"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K138}` }, { quoted: m })
-if (budy.includes("🥲"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K139}` }, { quoted: m })
-if (budy.includes("😘" && "🥰" && "😍" && "😝" && "😜" && "🤗" && "☺️" && "😊"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K140}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/heart.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-   result = fs.readFileSync(`./Android/AllData/sticker/bow.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("🤭"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K141}` }, { quoted: m })
-if (budy.includes("😥" && "😪" && "😢"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K142}` }, { quoted: m })
-if (budy.includes("🥺"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K143}` }, { quoted: m })
-if (budy.includes("❤️" && "❣️" && "💝" && "💕" && "💖" && "💗" && "💞" && "💓"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K144}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/hora.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/heart.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-   result = fs.readFileSync(`./Android/AllData/sticker/lajja.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("🫠"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K145}` }, { quoted: m })
-if (budy.includes("gm" && "mornin" && "මෝනි" && "මෝර්" && "උදෑසන"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K146}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/gm.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("gn" && "night" && "නයිට්" && "රාත්‍රි" && "රාත්රි"))
-   KUMUTHU.sendMessage(m.chat, { text: `${rep.K147}` }, { quoted: m })
-   result = fs.readFileSync(`./Android/AllData/sticker/gn.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-   result = fs.readFileSync(`./Android/AllData/sticker/gn1.webp`)
-   KUMUTHU.sendMessage(m.chat, { sticker: result })
-if (budy.includes("kumuthu" && "prabhasha"))
-result = fs.readFileSync(`./Android/AllData/sticker/kumu.webp`)
-KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
+    if (budy.includes("hi ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K1}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+        result = fs.readFileSync(`./Android/AllData/sticker/dance.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("හායි ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K2}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("hui ")) {
+        result = fs.readFileSync(`./Android/AllData/sticker/flower.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K3}` }, { quoted: m })
+           }
+     if (budy.includes("හූයි ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K4}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/flower.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("හේයි ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K5}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/hiii.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("hey ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K6}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/hiii.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("හලෝ" && "halo" && "හලො" && "හලු")) {
+        result = fs.readFileSync(`./Android/AllData/sticker/hehe1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K7}` }, { quoted: m })
+           }
+     if (budy.includes("hello")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K8}` }, { quoted: m })
+           }
+     if (budy.includes("ane " && "amne")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K9}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/angry1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("අනේ" && "අනෙ" && "අම්නේ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K10}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/angry.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("පනෙ " && "පනේ" && "පණේ" && "පන " && "පණ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K11}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/heart.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("හේහේ" && "හේ ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K12}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/flower2.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("he he")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K13}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/flower2.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("හී")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K14}` }, { quoted: m })
+           }
+     if (budy.includes("ammo" && "amo")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K15}` }, { quoted: m })
+           }
+     if (budy.includes("අමො" && "අමෝ" && "අම්මෝ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K16}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/lokukama.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("බුදු" && "බුදා")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K17}` }, { quoted: m })
+           }
+     if (budy.includes("චූටි" && "chooti")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K18}` }, { quoted: m })
+           }
+     if (budy.includes("sudu" && "සුදූ" && "තුදූ" && "ශුඩු")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K19}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/lisa.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("kohomei" && "komei")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K20}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/heart2.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("කොහොමෙයි " && "කෝමද" && "කොහොමද")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K21}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/heart1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("hodai" && "hondai" && "හොදයි" && "හොඳා")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K22}` }, { quoted: m })
+           }
+     if (budy.includes("maru" && "hebei" && "මරු")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K23}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/hihi.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("මලු")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K24}` }, { quoted: m })
+           }
+     if (budy.includes("umma")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K25}` }, { quoted: m })
+           }
+     if (budy.includes("උම්ම" && "උම්මා")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K26}` }, { quoted: m })
+           }
+     if (budy.includes("ආදරෙ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K27}` }, { quoted: m })
+           }
+     if (budy.includes("කැමතී")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K28}` }, { quoted: m })
+           }
+     if (budy.includes("uwa")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K29}` }, { quoted: m })
+           }
+     if (budy.includes("ඌයි")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K30}` }, { quoted: m })
+           }
+     if (budy.includes("aaw" && "Aaw")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K31}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/gun.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("ආව්")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K32}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("හොරගෙ" && "හොර ගෙ" && "හොල")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K33}` }, { quoted: m })
+           }
+     if (budy.includes("hm" && "හ්ම්")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K34}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/dance1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("හුම්")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K35}` }, { quoted: m })
+           }
+     if (budy.includes("මොකෝ" && "මොකද" && "moko")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K36}` }, { quoted: m })
+           }
+     if (budy.includes("හප්" && "දුප්" && "dup")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K37}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("ඕ" && "ඔව්" && "ow" && "oo")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K38}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/sari.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("නෑ" && "නැ" && "na")) {
+     result = fs.readFileSync(`./Android/AllData/sticker/hihi.webp`)
+     KUMUTHU.sendMessage(m.chat, { sticker: result })
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K39}` }, { quoted: m })
+           }
+     if (budy.includes("ආසයි")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K40}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/bow.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("asa" && "ආස " && "ආසනෑ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K41}` }, { quoted: m })
+           }
+     if (budy.includes("හා" && "Ha")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K42}` }, { quoted: m })
+           }
+     if (budy.includes("Ba" && "බැ" && "බෑ")) {
+     result = fs.readFileSync(`./Android/AllData/sticker/hihi.webp`)
+     KUMUTHU.sendMessage(m.chat, { sticker: result })
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K43}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/blackhehe1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("සාම්ත" && "සාන්ත")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K44}` }, { quoted: m })
+           }
+     if (budy.includes("සුදුද" && "sududa")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K45}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/uu.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("කෑවද" && "කෑවයි" && "කාලද")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K46}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/eat.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("බිව්වද")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K47}` }, { quoted: m })
+           }
+     if (budy.includes("නිදිම")) {//තයි
+     result = fs.readFileSync(`./Android/AllData/sticker/hmm1.webp`)
+         KUMUTHU.sendMessage(m.chat, { sticker: result })
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K48}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/gn2.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("නිදාග")) {//න්න
+     result = fs.readFileSync(`./Android/AllData/sticker/hmm.webp`)
+     KUMUTHU.sendMessage(m.chat, { sticker: result })
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K49}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/hmm.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("මොනව" && "මොක" && "මොකෝ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K50}` }, { quoted: m })
+           }
+     if (budy.includes("mona" && "mok")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K51}` }, { quoted: m })
+           }
+     if (budy.includes("කරන්නෙ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K52}` }, { quoted: m })
+           }
+     if (budy.includes("mk")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K53}` }, { quoted: m })
+           }
+     if (budy.includes("cudda")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K54}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/gamma.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("සුද්දා")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K55}` }, { quoted: m })
+           }
+     if (budy.includes("රිදෙනෝ" && "සිදෙනෝ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K56}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/angry.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("රිදුන" && "රිදුනා" && "ත කැඩු")) {//හිත කැඩුනා
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K57}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("දුක" && "දුම්ක" && "duka")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K58}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/cry.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+        result = fs.readFileSync(`./Android/AllData/sticker/uu.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("ඉන්න" && "ඉම්න")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K59}` }, { quoted: m })
+           }
+     if (budy.includes("ඉම්හි" && "imhi")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K60}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/imhi.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("අයියෝ" && "aiyo")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K61}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/haiyo.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("දන්නව")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K62}` }, { quoted: m })
+           }
+     if (budy.includes("යනවද" && "යනවයි")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K63}` }, { quoted: m })
+           }
+     if (budy.includes("දෙන්න" && "denna")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K64}` }, { quoted: m })
+           }
+     if (budy.includes("dipan" && "දීපන්" && "දීපං")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K65}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/gun.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("කන්නැද්ද")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K66}` }, { quoted: m })
+           }
+     if (budy.includes("පලය" && "කාපන්")) {//පලයන්
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K67}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/whokana.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("යකෝ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K68}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/angry1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("ඇයි" && "ai")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K69}` }, { quoted: m })
+           }
+     if (budy.includes("දන්නෑ" && "danna")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K70}` }, { quoted: m })
+           }
+     if (budy.includes("හොඳටම ක" && "hodatama ka")) {//හොඳටම කරනවා
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K71}` }, { quoted: m })
+           }
+     if (budy.includes("ගහන්න" && "ගහපන්" && "ගහපි" && "gahapa")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K72}` }, { quoted: m })
+           }
+     if (budy.includes("හෑ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K73}` }, { quoted: m })
+           }
+     if (budy.includes("පුදුම")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K74}` }, { quoted: m })
+           }
+     if (budy.includes("මාර")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K75}` }, { quoted: m })
+           }
+     if (budy.includes("පට්ට" && "patta")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K76}` }, { quoted: m })
+           }
+     if (budy.includes("අඩො" && "අඩෝ" && "ado")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K77}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/gun.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("අඩේ" && "ade")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K78}` }, { quoted: m })
+           }
+     if (budy.includes("ලොකු")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K79}` }, { quoted: m })
+           }
+     if (budy.includes("පොඩි")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K80}` }, { quoted: m })
+           }
+     if (budy.includes("ටිකක්" && "tikak")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K81}` }, { quoted: m })
+           }
+     if (budy.includes("ඒකි" && "eki")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K82}` }, { quoted: m })
+           }
+     if (budy.includes("ඌ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K83}` }, { quoted: m })
+           }
+     if (budy.includes("හොටු" && "හාල්")) {//කෑලි
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K84}` }, { quoted: m })
+           }
+     if (budy.includes("පව්" && "පවු" && "paw")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K85}` }, { quoted: m })
+           }
+     if (budy.includes("ඉන්න" && "ඉදපන්" && "ඉඳපන්" && "idapan" && "idahn" && "idahan")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K86}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/mama.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("කෝ" && "ko" && "කොහෙද")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K87}` }, { quoted: m })
+           }
+     if (budy.includes("ඇස්")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K88}` }, { quoted: m })
+           }
+     if (budy.includes("ඔලුව රි" && "oluwa ri")) {//රිදෙනෝ
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K89}` }, { quoted: m })
+           }
+     if (budy.includes("අමාරු" && "amaru")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K90}` }, { quoted: m })
+           }
+     if (budy.includes("සෙරෙප්පු")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K91}` }, { quoted: m })
+           }
+     if (budy.includes("කලිසම")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K92}` }, { quoted: m })
+           }
+     if (budy.includes("අත")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K93}` }, { quoted: m })
+           }
+     if (budy.includes("වල්" && "wal")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K94}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("අහින්සක" && "ahinsaka")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K95}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/flower1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("අතේ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K96}` }, { quoted: m })
+           }
+     if (budy.includes("දාන්න" && "දාපන්" && "dapn" && "dapan")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K97}` }, { quoted: m })
+           }
+     if (budy.includes("පෝන්" && "phone")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K98}` }, { quoted: m })
+           }
+     if (budy.includes("porn")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K99}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/bite.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("බල්ලා" && "ball" && "bll" && "balm" && "බම්ල" && "බැම්ලි" && "bam" && "බැල්ලි")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K100}` }, { quoted: m })
+           }
+     if (budy.includes("පූසා")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K101}` }, { quoted: m })
+           }
+     if (budy.includes("කපුටා")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K102}` }, { quoted: m })
+           }
+     if (budy.includes("උරුලෑ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K103}` }, { quoted: m })
+           }
+     if (budy.includes("කියන්" && "කියප" && "කියහ" && "kiya")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K104}` }, { quoted: m })
+           }
+     if (budy.includes("යමු" && "යං" && "yamu" && "yan")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K105}` }, { quoted: m })
+           }
+     if (budy.includes("ගියා" && "giya")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K106}` }, { quoted: m })
+           }
+     if (budy.includes("ආතල්" && "athal")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K107}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("විහිලු" && "ihilu")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K108}` }, { quoted: m })
+           }
+     if (budy.includes("තරහ" && "tharaha")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K109}` }, { quoted: m })
+           }
+     if (budy.includes("පම්ක" && "පක" && "pamka")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K110}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/whokana.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("පක්" && "pak")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K111}` }, { quoted: m })
+           }
+     if (budy.includes("හුප්" && "හුම්ත" && "හුත්" && "කැවු" && "huk" && "huth" && "humth")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K112}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/whokana.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("කැරි" && "කැම්රි" && "kari" && "kamri")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K113}` }, { quoted: m })
+           }
+     if (budy.includes("පොන්න" && "පොයන්" && "පින්නය" && "ponn" && "pinna")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K114}` }, { quoted: m })
+           }
+     if (budy.includes("ගොබ්බ" && "ගොං" && "මෝඩ" && "gobba" && "moda")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K115}` }, { quoted: m })
+           }
+     if (budy.includes("ගෑනි" && "gani")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K116}` }, { quoted: m })
+           }
+     if (budy.includes("කුක්කු" && "කුම්කු" && "kukku" && "කුම්කු")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K117}` }, { quoted: m })
+           }
+     if (budy.includes("යටිබඩ")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K118}` }, { quoted: m })
+           }
+     if (budy.includes("වේස" && "වේසි" && "ඒස" && "ඒසි" && "wesa" && "wesi" && "වේමිස")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K119}` }, { quoted: m })
+           }
+     if (budy.includes("බඩුව" && "බම්ඩුව" && "baduwa" && "bamduwa")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K120}` }, { quoted: m })
+           }
+     if (budy.includes("සෙම්සි" && "sex" && "සෙක්සි")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K121}` }, { quoted: m })
+           }
+     if (budy.includes("හුක" && "හුම්ක" && "humka")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K122}` }, { quoted: m })
+           }
+     if (budy.includes("උක්" && "uk " && "ukka")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K123}` }, { quoted: m })
+           }
+     if (budy.includes("පුකේ" && "පුක" && "පුම්ක" && "puka" && "puca")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K124}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/uu.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("ඇටේ" && "ate")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K125}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("වල්ල")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K126}` }, { quoted: m })
+           }
+     if (budy.includes("කටට දෙ" && "katata d" && "කටට ග")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K127}` }, { quoted: m })
+           }
+     if (budy.includes("අරින්")) {//න
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K128}` }, { quoted: m })
+           }
+     if (budy.includes("ඕන්")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K129}` }, { quoted: m })
+           }
+     if (budy.includes("නිකං" && "නිකන්" && "නිකම්" && "නිකාං" && "niakn" && "nikam" && "nikn")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K130}` }, { quoted: m })
+           }
+     if (budy.includes("😂" && "🤣")) {
+     result = fs.readFileSync(`./Android/AllData/sticker/amo1.webp`)
+     KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K131}` })
+           }
+     if (budy.includes("😉" && "😅" && "😹")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K132}` })
+        result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
+           }
+     if (budy.includes("😇")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K133}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/balma.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("😒" && "😏" && "😼")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K134}` }, { quoted: m })
+           }
+     if (budy.includes("😭")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K135}` }, { quoted: m })
+           }
+     if (budy.includes("🥴")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K136}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/hehe.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
+           }
+     if (budy.includes("🙂")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K137}` }, { quoted: m })
+           }
+     if (budy.includes("😌")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K138}` }, { quoted: m })
+           }
+     if (budy.includes("🥲")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K139}` }, { quoted: m })
+           }
+     if (budy.includes("😘" && "🥰" && "😍" && "😝" && "😜" && "🤗" && "☺️" && "😊")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K140}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/heart.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+        result = fs.readFileSync(`./Android/AllData/sticker/bow.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("🤭")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K141}` }, { quoted: m })
+           }
+     if (budy.includes("😥" && "😪" && "😢")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K142}` }, { quoted: m })
+           }
+     if (budy.includes("🥺")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K143}` }, { quoted: m })
+           }
+     if (budy.includes("❤️" && "❣️" && "💝" && "💕" && "💖" && "💗" && "💞" && "💓")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K144}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/hora.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/heart.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+        result = fs.readFileSync(`./Android/AllData/sticker/lajja.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("🫠")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K145}` }, { quoted: m })
+           }
+     if (budy.includes("gm" && "mornin" && "මෝනි" && "මෝර්" && "උදෑසන")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K146}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/gm.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("gn" && "night" && "නයිට්" && "රාත්‍රි" && "රාත්රි")) {
+        KUMUTHU.sendMessage(m.chat, { text: `${rep.K147}` }, { quoted: m })
+        result = fs.readFileSync(`./Android/AllData/sticker/gn.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+        result = fs.readFileSync(`./Android/AllData/sticker/gn1.webp`)
+        KUMUTHU.sendMessage(m.chat, { sticker: result })
+           }
+     if (budy.includes("kumuthu" && "prabhasha")) {
+     result = fs.readFileSync(`./Android/AllData/sticker/kumu.webp`)
+     KUMUTHU.sendMessage(m.chat, { sticker: result }, { quoted: m })
+           }
     //////////////
         //Public & Self\\
         if (!KUMUTHU.public) {
