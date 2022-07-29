@@ -98,16 +98,16 @@ async function startKUMUTHU() {
        }
        let lolXeon = { url : ppgc }
        if (pea[0].announce == true) {
-       KUMUTHU.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
-       } else if(pea[0].announce == false) {
-       KUMUTHU.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
-       } else if (pea[0].restrict == true) {
-       KUMUTHU.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
-       } else if (pea[0].restrict == false) {
-       KUMUTHU.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
-       } else {
-       KUMUTHU.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
-     }
+        KMUTHU.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+        } else if(pea[0].announce == false) {
+        KMUTHU.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+        } else if (pea[0].restrict == true) {
+        KMUTHU.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+        } else if (pea[0].restrict == false) {
+        KMUTHU.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+        } else {
+        KMUTHU.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+      }
     })
     
     //randoming function
@@ -150,16 +150,13 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
-   └───────────────┈ ⳹`
+                xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
+🤭🌹 Welcome To  ${metadata.subject}
+
+🤭🌹 ${xmembers} Members
+
+${xdate}
+${xtime} `
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
@@ -167,7 +164,7 @@ let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./Android/AllData/theme/cheems.xlsx'),
+document: fs.readFileSync('./Android/AllData/theme/RD.docx'),
 mimetype: docs,
 jpegThumbnail:XeonWlcm,
 mentions: [num],
@@ -194,16 +191,13 @@ KUMUTHU.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗟𝗲𝗳𝘁 
-   │✑ ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xeonmembers}th
-   │✑  𝗧𝗶𝗺𝗲 : 
-   │✑  ${xeontime} ${xeondate}
-   └───────────────┈ ⳹`
+                    xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
+🤭🌹 Welcome To  ${metadata.subject}
+                    
+🤭🌹 ${xeonmembers} Members
+                    
+${xeondate}
+${xeontime} `
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
@@ -211,7 +205,7 @@ let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./Android/AllData/theme/cheems.xlsx'),
+document: fs.readFileSync('./Android/AllData/theme/RD.docx'),
 mimetype: docs,
 jpegThumbnail:XeonLft,
 mentions: [num],
