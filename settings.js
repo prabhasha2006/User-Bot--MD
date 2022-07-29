@@ -38,17 +38,28 @@ global.socialm = "GitHub: prabhasha2006" //ur github or insta name
 global.location = "India, Mizoram, Aizawl" //ur location
 
 //bot body 
+<<<<<<< HEAD
 global.alivepic = `https://i.ibb.co/3f0Hn6K/RD-dragon-alive02.jpg` // Senter's propile picture
 //global.alivepic = `https://i.ibb.co/x7qYTrq/20220605-103944.jpg`  or your image
 
 global.dragonchat = "false"  // chat bot  "true" / "false"
+=======
+global.alivepic = `${encodeURIComponent(sender_dp)}` // Senter's propile picture
+//global.alivepic = `https://i.ibb.co/x7qYTrq/20220605-103944.jpg`  or your image
+
+global.dragonchat = "true"  // chat bot  "true" / "false"
+>>>>>>> c7982d545b9b93ee73ce5052266b4a2bbc34babc
 global.owner = ['+380944814219']
 global.ownertag = '+380944814219' //ur tag number
 global.botname = '☬RED༒DRAGON࿐"' //ur bot name
 global.packname = "Bot Sticker" // sticker packname
 global.author = "☬RED༒DRAGON࿐" // sticker author
 global.dragonemoji = '🧩' // Menu emoji
+<<<<<<< HEAD
 global.footer = '[ ◉ ʀᴇᴅ-ᴅʀᴀɢᴏɴ-MD ]' //In list menu
+=======
+global.footer = '[ ◉ ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ᴍᴅ ]' //In list menu
+>>>>>>> c7982d545b9b93ee73ce5052266b4a2bbc34babc
 
 global.button = '☰ GITHUB ☰' //Costomize A Button Name In Alive Message
 global.btnurl = 'https://github.com/prabhasha2006' //Change Your Button's URL
